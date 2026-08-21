@@ -1,0 +1,12 @@
+[main]
+name = "hello-world"
+build_files = ["pyproject.toml"]
+
+[ubuntu]
+version = "24.04"
+
+[job]
+memory = "512MiB"
+email_on_success = true
+email_on_failure = true
+artifact_upload_order = "FIFO"

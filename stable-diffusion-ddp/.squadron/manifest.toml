@@ -1,0 +1,14 @@
+[main]
+name = "stable-diffusion-ddp"
+volumes = ["builtin/stable-diffusion-v1-5", "builtin/landscape-images"]
+build_files = ["pyproject.toml"]
+
+[ubuntu]
+version = "24.04"
+
+[job]
+cuda = "13.0"
+memory = "16GiB"
+email_on_success = true
+email_on_failure = true
+artifact_upload_order = "LIFO"
